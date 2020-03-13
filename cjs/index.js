@@ -5,11 +5,6 @@ module.exports = _ => ({
   // so that using bind slows it down by 60%.
   // Firefox and Chrome are just fine in both cases,
   // so let's use the approach that works fast everywhere 👍
-  get(key) {
-    return _.get(key);
-  },
-  set(key, value) {
-    _.set(key, value);
-    return value;
-  }
+  get: key => _.get(key),
+  set: (key, value) => (_.set(key, value), value)
 });

@@ -12,9 +12,7 @@ var umap = (function (exports) {
         return _.get(key);
       },
       set: function set(key, value) {
-        _.set(key, value);
-
-        return value;
+        return _.set(key, value), value;
       }
     };
   });
