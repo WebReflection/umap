@@ -1,0 +1,1 @@
+var umap=function(t){"use strict";return t.default=function(e){return{get:e.get.bind(e),set:function(t,n){return e.set(t,n),n}}},t}({}).default;
